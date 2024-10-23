@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignorado.com</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #282c34;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 5rem;
+            text-transform: uppercase;
+            animation: colorChange 3s infinite, bounce 2s infinite ease-in-out;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Animación para cambio de color */
+        @keyframes colorChange {
+            0% { color: #fff; }
+            25% { color: #ff6347; }
+            50% { color: #00fa9a; }
+            75% { color: #1e90ff; }
+            100% { color: #fff; }
+        }
+
+        /* Animación de rebote */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+        /* Hover para efecto dinámico en el texto */
+        h1:hover {
+            animation: rotateText 2s infinite;
+            color: #ff1493;
+        }
+
+        /* Rotación en hover */
+        @keyframes rotateText {
+            0% { transform: rotate(0); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Transición de fondo */
+        body {
+            transition: background-color 2s;
+        }
+
+        /* Cambia el fondo al hacer click */
+        body:active {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>ignorado.com</h1>
+</body>
+</html>
